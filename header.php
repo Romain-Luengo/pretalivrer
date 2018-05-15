@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/pretalivrer/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
@@ -40,9 +41,9 @@
 
   ?>
 
-<div id="header-page">
+<div class="header-page">
     <div class="container">
-      <div class="row" style="align-items: center;">
+      <div class="row navbar-bloc" style="align-items: center;">
         <!-- Site logo -->
         <div class="logo col-lg-3">
           <a href="#"><img src="https://devitems.com/preview/truemart/img/logo/logo2.png%22%3E"/></a>
@@ -83,6 +84,27 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-lg-12 menu-bloc">
+            <div class="col-lg-3 button-main-bloc no-padding">
+                <button class="col-lg-12 button-main no-padding">SHOP BY CATEGORIES</button>
+                <div class="col-lg-12 button-main-menu">
+                    <ul>
+                        <li>
+                            <a href="shop.html">
+                                <i class="fas fa-blender"></i> Computer &amp; Laptop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="shop.html">
+                                <i class="fas fa-blender"></i> Computer &amp; Laptop
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
       </div>
     </div>
   </div>

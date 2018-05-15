@@ -1,0 +1,44 @@
+.menu-bloc {
+    .button-main {
+        height: 40px;
+        background-color: #f2f2f2;
+        border: none;
+    }
+}
+.header-page {
+    padding-top: 15px;
+    background: #212121;
+    .logo {
+        transition: 0.2s;
+        margin-bottom: 10px;
+    }
+    .logo:hover {
+        transform: scale(0.95) rotate(3deg);
+    }
+    .button-main-menu {
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                height: 40px;
+                line-height: 40px;
+                a {
+                    color: black !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 480px) {
+    .header-page .logo {
+        margin-bottom: 0px;
+    }
+}

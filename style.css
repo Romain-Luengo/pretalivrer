@@ -1,28 +1,13 @@
+.no-padding {
+  padding: 0 !important;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #232323;
   font-size: 16px;
   line-height: 1.25em;
-}
-#header-page {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 15px;
-  background: #212121;
-  padding-bottom: 10px;
-}
-#header-page .logo {
-  transition: 0.2s;
-  margin-bottom: 10px;
-}
-@media only screen and (min-width: 480px) {
-  #header-page .logo {
-    margin-bottom: 0px;
-  }
-}
-#header-page .logo:hover {
-  transform: scale(0.95) rotate(3deg);
 }
 a {
   color: white;
@@ -40,7 +25,7 @@ a:hover {
   border: none;
   white-space: nowrap;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-device-width: 480px) {
   .site-search-box {
     width: 95%;
     margin-bottom: 0px;
@@ -56,7 +41,7 @@ a:hover {
   color: white;
   margin-bottom: 10px;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-device-width: 480px) {
   .btn-site-search-box {
     width: 90%;
     margin-bottom: 0px;
@@ -64,4 +49,46 @@ a:hover {
 }
 .btn-site-search-box:hover {
   background: #b92200;
+}
+
+.menu-bloc .button-main {
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+}
+.header-page {
+  padding-top: 15px;
+  background: #212121;
+}
+.header-page .logo {
+  transition: 0.2s;
+  margin-bottom: 10px;
+}
+.header-page .logo:hover {
+  transform: scale(0.95) rotate(3deg);
+}
+.header-page .button-main-menu {
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header-page .button-main-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.header-page .button-main-menu ul li {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+}
+.header-page .button-main-menu ul li a {
+  color: black !important;
+}
+@media only screen and (min-device-width: 480px) {
+  .header-page .logo {
+    margin-bottom: 0px;
+  }
 }
