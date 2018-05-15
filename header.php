@@ -90,16 +90,7 @@
                 <button class="col-lg-12 button-main no-padding">SHOP BY CATEGORIES</button>
                 <div class="col-lg-12 button-main-menu">
                     <ul>
-                        <li>
-                            <a href="shop.html">
-                                <i class="fas fa-blender"></i> Computer &amp; Laptop
-                            </a>
-                        </li>
-                        <li>
-                            <a href="shop.html">
-                                <i class="fas fa-blender"></i> Computer &amp; Laptop
-                            </a>
-                        </li>
+                        <?php displayCategoriesMenu() ?>
                     </ul>
                 </div>
             </div>
