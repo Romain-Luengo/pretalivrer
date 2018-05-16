@@ -3,6 +3,8 @@
         height: 40px;
         background-color: #f2f2f2;
         border: none;
+        cursor: pointer;
+        outline: 0;
     }
 }
 .header-page {
@@ -15,16 +17,27 @@
     .logo:hover {
         transform: scale(0.95) rotate(3deg);
     }
+    .open-menu {
+        max-height: fit-content;
+    }
+    .close-menu {
+        max-height: 0px;
+    }
     .button-main-menu {
-        background-color: #ffffff;
+        background-color: grey;
         position: absolute;
         width: 100%;
         top: 40px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        min-height: 0px;
+        transition: all .5s;
+        -moz-transition: all .5s; 
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        overflow: hidden;
         ul {
             margin: 0;
-            padding: 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
             li {
                 list-style: none;
                 height: 40px;
@@ -37,7 +50,7 @@
     }
 }
 
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-width: 480px) {
     .header-page .logo {
         margin-bottom: 0px;
     }

@@ -55,6 +55,8 @@ a:hover {
   height: 40px;
   background-color: #f2f2f2;
   border: none;
+  cursor: pointer;
+  outline: 0;
 }
 .header-page {
   padding-top: 15px;
@@ -67,17 +69,28 @@ a:hover {
 .header-page .logo:hover {
   transform: scale(0.95) rotate(3deg);
 }
+.header-page .open-menu {
+  max-height: fit-content;
+}
+.header-page .close-menu {
+  max-height: 0px;
+}
 .header-page .button-main-menu {
-  background-color: #ffffff;
+  background-color: grey;
   position: absolute;
   width: 100%;
   top: 40px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  min-height: 0px;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  overflow: hidden;
 }
 .header-page .button-main-menu ul {
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .header-page .button-main-menu ul li {
   list-style: none;
@@ -87,7 +100,7 @@ a:hover {
 .header-page .button-main-menu ul li a {
   color: black !important;
 }
-@media only screen and (min-device-width: 480px) {
+@media only screen and (min-width: 480px) {
   .header-page .logo {
     margin-bottom: 0px;
   }

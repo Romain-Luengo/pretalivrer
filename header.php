@@ -22,9 +22,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="<?php echo get_site_url(); ?>/wp-content/themes/pretalivrer/components/js/jquery-3.3.1.min.js"></script>
+    <script src="<?php echo get_site_url(); ?>/wp-content/themes/pretalivrer/components/js/tether.min.js"></script>
+    <script src="<?php echo get_site_url(); ?>/wp-content/themes/pretalivrer/components/js/bootstrap.min.js"></script>
 
     <?php wp_get_archives('type=monthly&format=link'); ?>
 
@@ -40,6 +40,19 @@
     $pagename = $post->post_name;
 
   ?>
+
+  <script>
+      $(document).ready(function () {
+        $("#button-main").click(function () {
+            if ($("#button-main-menu").hasClass('close-menu')) {
+                $("#button-main-menu").removeClass('close-menu').addClass('open-menu');
+            } else {
+                $("#button-main-menu").removeClass('open-menu').addClass('close-menu');
+            }
+            
+        });
+      });
+  </script>
 
 <div class="header-page">
     <div class="container">
@@ -87,8 +100,8 @@
 
         <div class="col-lg-12 menu-bloc">
             <div class="col-lg-3 button-main-bloc no-padding">
-                <button class="col-lg-12 button-main no-padding">SHOP BY CATEGORIES</button>
-                <div class="col-lg-12 button-main-menu">
+                <button id="button-main" class="col-lg-12 button-main no-padding">SHOP BY CATEGORIES</button>
+                <div id="button-main-menu" class="col-lg-12 button-main-menu close-menu">
                     <ul>
                         <?php displayCategoriesMenu() ?>
                     </ul>
