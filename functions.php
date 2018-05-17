@@ -9,7 +9,7 @@ function displayCategoriesMenu() {
     $pad_counts = 0;
     $hierarchical = 1;
     $title = '';  
-    $empty = 1;
+    $empty = 0;
     
     $args = array(
             'taxonomy'     => $taxonomy,

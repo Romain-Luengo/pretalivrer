@@ -1,0 +1,92 @@
+.top-navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+.bottom-navbar {
+    background-color: #ffffff;
+}
+
+.menu-bloc {
+    .button-main {
+        height: 40px;
+        background-color: #f2f2f2;
+        border: none;
+        cursor: pointer;
+        outline: 0;
+    }
+}
+.header-page {
+    background: #ffffff;
+    .logo {
+        transition: 0.2s;
+        margin-bottom: 10px;
+    }
+    .logo:hover {
+        transform: scale(0.95) rotate(3deg);
+    }
+    .site-search-box {
+        border-width: 1px;
+        border-color: #e6e6e6;
+        outline: none;
+        border-style: solid;
+    }
+    .button-main-menu {
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        min-height: 0px;
+        transition: all .3s;
+        -moz-transition: all .3s; 
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        overflow: hidden;
+        ul {
+            margin: 0;
+            padding-left: 0;
+            li {
+                list-style: none;
+                height: 40px;
+                line-height: 30px;
+                display: flex;
+                a {
+                    color: black !important;
+                    width: 100%;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    .fas {
+                        color: grey;
+                    }
+                }
+                a:hover{
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .button-secondary {
+        button {
+            height: 40px;
+            line-height: 40px;
+            border: none;
+            background-color: #ffffff;
+            color: black;
+        }
+    }
+    .button-secondary:hover {
+        button {
+            color: red;
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .header-page .logo {
+        margin-bottom: 0px;
+    }
+}

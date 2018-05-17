@@ -1,16 +1,29 @@
 .no-padding {
   padding: 0 !important;
 }
+button {
+  outline: 0 !important;
+  cursor: pointer !important;
+}
+html,
+body {
+  background-color: #eee;
+}
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+  }
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  color: #232323;
+  color: #f2f2f2;
   font-size: 16px;
   line-height: 1.25em;
 }
 a {
-  color: white;
+  color: black;
 }
 a:hover {
   color: #e62e04;
@@ -38,7 +51,7 @@ a:hover {
 }
 .btn-site-search-box {
   background: #e62e04;
-  color: white;
+  color: black;
   margin-bottom: 10px;
 }
 @media only screen and (min-device-width: 480px) {
@@ -51,6 +64,15 @@ a:hover {
   background: #b92200;
 }
 
+.top-navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.bottom-navbar {
+  background-color: #ffffff;
+}
 .menu-bloc .button-main {
   height: 40px;
   background-color: #f2f2f2;
@@ -59,8 +81,7 @@ a:hover {
   outline: 0;
 }
 .header-page {
-  padding-top: 15px;
-  background: #212121;
+  background: #ffffff;
 }
 .header-page .logo {
   transition: 0.2s;
@@ -69,39 +90,107 @@ a:hover {
 .header-page .logo:hover {
   transform: scale(0.95) rotate(3deg);
 }
-.header-page .open-menu {
-  max-height: fit-content;
-}
-.header-page .close-menu {
-  max-height: 0px;
+.header-page .site-search-box {
+  border-width: 1px;
+  border-color: #e6e6e6;
+  outline: none;
+  border-style: solid;
 }
 .header-page .button-main-menu {
-  background-color: grey;
+  background-color: #ffffff;
   position: absolute;
   width: 100%;
   top: 40px;
   min-height: 0px;
-  transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
+  transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
   overflow: hidden;
 }
 .header-page .button-main-menu ul {
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 0;
 }
 .header-page .button-main-menu ul li {
   list-style: none;
   height: 40px;
-  line-height: 40px;
+  line-height: 30px;
+  display: flex;
 }
 .header-page .button-main-menu ul li a {
   color: black !important;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-page .button-main-menu ul li a .fas {
+  color: grey;
+}
+.header-page .button-main-menu ul li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+.header-page .button-secondary button {
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+}
+.header-page .button-secondary:hover button {
+  color: red;
 }
 @media only screen and (min-width: 480px) {
   .header-page .logo {
     margin-bottom: 0px;
   }
+}
+
+.boxes-bloc {
+  margin: 0 -5px;
+}
+.boxes-bloc .box-bloc {
+  height: 410px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.boxes-bloc .box-bloc .box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1.5px solid #e6e6e6;
+  overflow: hidden;
+  transition: all 1s;
+}
+.boxes-bloc .box-bloc .box img {
+  width: 100%;
+  height: auto;
+}
+.boxes-bloc .box-bloc .box:hover {
+  border: 1.5px solid #b3b3b3;
+}
+.boxes-bloc .box-bloc .little-box {
+  float: left;
+  height: 195px;
+}
+.boxes-bloc .box-bloc .big-box {
+  height: 400px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 10%;
+}
+.banniere-solo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banniere-solo a {
+  display: block;
+}
+.banniere-solo a img {
+  width: 100% !important;
 }
